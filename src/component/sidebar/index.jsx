@@ -12,7 +12,8 @@ import UserIcon from "../../assets/UserIcon";
 import SecurityIcon from "../../assets/SecurityIcon";
 import AdminIcon from "../../assets/AdminIcon";
 
-const Sidebar = () => {
+const Sidebar = ({isShowSideBar}) => {
+  
   const menuItem = [
     { id: 1, title: "Dashboard", link: "#", icon: <DashboardIcon /> },
     {
@@ -32,7 +33,7 @@ const Sidebar = () => {
     { id: 10, title: "Administration", link: "#", icon: <AdminIcon /> },
   ];
   return (
-    <SidebarContainer>
+    <SidebarContainer showSidebar={isShowSideBar}>
       <Logo>
         <img src={logo} alt="Logo" />
       </Logo>

@@ -1,10 +1,10 @@
 export const contacts = [
-  { name: "Natali Craig", image: "./natalie.svg" },
-  { name: "Drew Cano", image: "./byeWind.svg" },
-  { name: "Andi Lane", image: "./female.svg" },
-  { name: "Koray Okumus", image: "./natalie.svg" },
-  { name: "Kate Morrison", image: "./natalie.svg" },
-  { name: "Melody Macy", image: "./vite.svg" },
+  { name: "Natali Craig", image: "/natalie.svg" },
+  { name: "Drew Cano", image: "/byeWind.svg" },
+  { name: "Andi Lane", image: "/female.svg" },
+  { name: "Koray Okumus", image: "/natalie.svg" },
+  { name: "Kate Morrison", image: "/natalie.svg" },
+  { name: "Melody Macy", image: "/vite.svg" },
 ];
 
 export const notifications = [

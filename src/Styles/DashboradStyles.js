@@ -34,9 +34,20 @@ export const RightSideSection = styled.section`
   width: 250px;
   border-radius: 1rem;
   padding: 24px;
+  @media only screen and (max-width: 992px) {
+    display:none
+  }
 `;
 export const LineChartSection=styled.section`
 display: flex;
 gap: 1rem;
 margin: 25px 0;
+`
+export const ReportSection=styled.section`
+display: flex;
+gap: 24px;
+  @media only screen and (max-width: 992px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 `

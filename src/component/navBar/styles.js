@@ -1,17 +1,17 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
-position: sticky;
+  position: sticky;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 24px;
   padding-bottom: 18px;
-  border-bottom:1px solid #f0ecec;
+  border-bottom: 1px solid #f0ecec;
   p {
-  font-family: IBM plex Sans;
-  font-size:22px;
-  font-weight:500;
+    font-family: IBM plex Sans;
+    font-size: 22px;
+    font-weight: 500;
   }
 `;
 
@@ -52,8 +52,5 @@ export const ActionButtons = styled.div`
     &:hover {
       background: #f8f9fa;
     }
-  
   }
 `;
-
-

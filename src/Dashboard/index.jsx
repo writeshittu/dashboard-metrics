@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   DashboardContainer,
   LineChartSection,
@@ -6,6 +6,7 @@ import {
   MainWrapper,
   MarketingContainer,
   MetricsContainer,
+  ReportSection,
   RightSideSection,
 } from "../Styles/DashboradStyles";
 import Sidebar from "../component/sidebar";
@@ -24,6 +25,7 @@ import TrafficByWebsite from "../component/TrafficByWebsite";
 import Notifications from "../component/Notifications";
 
 const Dashboard = () => {
+  const [isShowSideBar, setIsShowSideBar] = useState(false)
   const metrics = [
     {
       label: "Requests",
@@ -50,9 +52,9 @@ const Dashboard = () => {
 
   return (
     <DashboardContainer>
-      <Sidebar />
+      <Sidebar isShowSideBar={isShowSideBar} />
       <MainContent>
-        <Header />
+        <Header isShowSideBar={isShowSideBar} setIsShowSideBar={setIsShowSideBar} />
         <MainWrapper>
           <MetricsContainer>
             <MetricsGrid>
@@ -72,10 +74,10 @@ const Dashboard = () => {
               <TrafficByWebsite />
             </LineChartSection>
 
-            <div style={{ display: "flex", gap: "24px" }}>
+            <ReportSection >
               <Barchart title="Reports Generated" />
               <TrafficPieChart title="Traffic by Location" />
-            </div>
+            </ReportSection>
             <MarketingContainer>
               <Barchart title="Marketing & SEO" data={marketingData} />
             </MarketingContainer>

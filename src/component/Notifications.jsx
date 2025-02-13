@@ -61,7 +61,7 @@ const Notifications = () => {
         {notifications?.map((notification) => (
           <NotificationItem key={notification.id}>
             <IconContainer>
-              <img src={notification.icon} />
+              <img src={notification.icon} alt="" />
             </IconContainer>
             <Content>
               <Message>{notification.message}</Message>

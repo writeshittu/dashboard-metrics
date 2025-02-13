@@ -2,7 +2,7 @@ import { ActionButtons, HeaderContainer, SearchBar } from './styles';
 import GroupIcon from '../../assets/GroupIcon';
 import SearchIcon from '../../assets/SearchIcon';
 
-const Header = () => {
+const Header = ({isShowSideBar,setIsShowSideBar}) => {
   return (
     <HeaderContainer>
       <p>Dashboard</p>

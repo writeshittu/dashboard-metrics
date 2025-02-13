@@ -7,6 +7,11 @@ export const SidebarContainer = styled.aside`
   border-right: 1px solid #f0ecec;
   display: flex;
   flex-direction: column;
+  @media only screen and (max-width: 992px) {
+    position: ${(props) => (props.showSidebar ? "absolute" : "relative")};
+    display: ${(props) => (props.showSidebar ? "block" : "none")};  
+    z-index: 1220;
+  }
 `;
 
 export const Logo = styled.div`
