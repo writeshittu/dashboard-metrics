@@ -6,7 +6,6 @@
 3. [Getting Started](#getting-started)
 4. [Components](#components)
 5. [Styling](#styling)
-6. [Testing](#testing)
 
 ## Overview
 
@@ -41,10 +40,6 @@ src/
 │   └── Dashboard/
 │       ├── index.js
 │       ├── styles.js
-│       └── index.test.js
-└── test/
-    ├── setup.js
-    └── test-utils.jsx
 ```
 
 ## Getting Started
@@ -117,11 +112,6 @@ Top bar component with search and actions.
 <Header />
 ```
 
-Features:
-- Search functionality
-- Action buttons (notifications etc.)
-- Responsive design
-
 ## Styling
 
 The project uses styled-components with a responsive design approach.
@@ -141,32 +131,6 @@ export const MetricsGrid = styled.div`
 - Tablet: 640px - 1024px
 - Desktop: > 1024px
 
-## Testing
-
-### Setup
-Tests are configured using Vitest and React Testing Library.
-
-```javascript
-// vite.config.js
-export default defineConfig({
-  plugins: [react()],
-  test: {
-    globals: true,
-    environment: 'jsdom',
-    setupFiles: './src/test/setup.js',
-  },
-});
-```
-
-### Running Tests
-```bash
-# Run all tests
-npm test
-
-# Run with coverage
-npm run coverage
-```
-
 ## Best Practices
 
 ### Component Development
@@ -176,10 +140,6 @@ npm run coverage
 ### Styling
 1. Implement responsive design
 2. Keep styles modular and component-specific
-
-### Testing
-1. Test component rendering
-2. Test user interactions
 
 ### Performance
 1. Optimize re-renders
