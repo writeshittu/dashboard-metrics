@@ -1,4 +1,3 @@
-import { Search, Bell, Sun, History, Bookmark } from 'lucide-react';
 import { ActionButtons, HeaderContainer, SearchBar } from './styles';
 import GroupIcon from '../../assets/GroupIcon';
 import SearchIcon from '../../assets/SearchIcon';
